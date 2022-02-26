@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class ProcessAName5026211010 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Type your name: ");
+
+        String name = scan.nextLine();
+        int spcIndex = name.indexOf(" ");
+
+        String Firstname = name.substring(0, spcIndex);
+        String Lastname = name.substring(spcIndex+1);
+
+        String Fullname = "Your name is : " + Lastname + ", " + Firstname.substring(0,1);
+        System.out.println(Fullname);
+
+    }
+}
