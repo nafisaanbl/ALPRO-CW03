@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class TestClass5026211010 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        ComputeMethods5026211010 cm = new ComputeMethods5026211010();
+
+        System.out.print("Input Fahrenheit : ");
+        double a = scan.nextDouble();
+        double Celcius = cm.fToC(a);
+        System.out.println("Temp in celcius is " + Celcius);
+
+        System.out.print("Input first side : ");
+        int firstside = scan.nextInt();
+        System.out.print("Input second side : ");
+        int secondside = scan.nextInt();
+        double result = cm.hypotenuse(firstside,secondside);
+        System.out.println("Hypotenuse is " + result);
+
+        int dice = cm.roll();
+        System.out.println("The sum of the dice values is " + dice);
+
+    }
+}
